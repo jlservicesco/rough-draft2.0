@@ -392,3 +392,50 @@ label{font-weight:900}
   .form-row{ grid-template-columns: 1fr; }
   .contact-hero h1{ font-size: 40px; }
 }
+/* ============ Mobile responsiveness ============ */
+
+/* Prevent horizontal scrolling */
+html, body { overflow-x: hidden; }
+
+/* Make images scale down on phones */
+img { max-width: 100%; height: auto; }
+
+/* General container padding on small screens */
+@media (max-width: 900px) {
+  .container { padding-left: 16px; padding-right: 16px; }
+}
+
+/* Stack 2/3-column layouts */
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr !important; }
+  .grid-3 { grid-template-columns: 1fr !important; }
+  .split  { grid-template-columns: 1fr !important; }
+}
+
+/* Hero: reduce huge text + spacing on phones */
+@media (max-width: 700px) {
+  .hero h1 { font-size: 38px !important; line-height: 1.05 !important; }
+  .hero .sub { font-size: 16px !important; }
+  .hero-actions { flex-direction: column !important; align-items: stretch !important; }
+  .hero-actions .btn { width: 100% !important; text-align: center; }
+}
+
+/* Header: wrap nav nicely on mobile */
+@media (max-width: 900px) {
+  .header-inner { flex-wrap: wrap !important; gap: 12px !important; }
+  .nav { flex-wrap: wrap !important; gap: 10px !important; justify-content: center !important; }
+  .brand img { height: 42px !important; }
+  .header-cta { width: 100% !important; display: flex; justify-content: center; }
+}
+
+/* Cards: better spacing */
+@media (max-width: 700px) {
+  .card { padding: 18px !important; border-radius: 16px !important; }
+  .service-head { font-size: 18px !important; }
+}
+
+/* Buttons: larger tap targets */
+@media (max-width: 700px) {
+  .btn { padding: 14px 16px !important; border-radius: 14px !important; }
+}
+

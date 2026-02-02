@@ -208,7 +208,11 @@ label{font-weight:900}
   .grid-3{grid-template-columns: 1fr}
   .grid-2{grid-template-columns: 1fr}
   .split{grid-template-columns: 1fr}
-  .nav{display:none}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
 }
 
 /* ===== Contact page: dark/glow style ===== */
